@@ -1,5 +1,8 @@
 package cars;
 
+/**
+ * Example of objects using Cars
+ */
 public class Main {
 
 	public static void main(String[] args) {
