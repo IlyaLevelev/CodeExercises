@@ -22,6 +22,19 @@ public class Car {
 		}
 	}
 	
+	public void decelerate (int decline) {
+		this.speed = this.speed - decline;
+		if (this.speed < 0) {
+			this.speed = 0;
+		}
+	}
+	
+	public void printStatus () {
+		System.out.println(this.brand + " driving at " + this.speed + "km/h");
+	}
+	
+		
+	
 	/*
 	public void setSpeed(int speed) {
 		
