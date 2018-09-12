@@ -8,26 +8,15 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Car car1 = new Car("BMW", 180);
-
 		Car car2 = new Car("Audi", 300);
+		Car car3 = car1;
+		car3.accelerate(10);
+		car3 = car2;
+		car3.accelerate(5);
 		
-		//car1.speed = 7000;
-		//car1.setSpeed(7000);
-		car1.accelerate(50);
-		System.out.println(car1.brand + " driving at " + car1.getSpeed() + "km/h");
-		
-		//car1.setSpeed(50);
-		car1.accelerate(270);		
-		System.out.println(car1.brand + " driving at " + car1.getSpeed() + "km/h");
-
-		car1.decelerate(100);		
-		System.out.println(car1.brand + " driving at " + car1.getSpeed() + "km/h");
-
-		car1.decelerate(20);		
-		System.out.println(car1.brand + " driving at " + car1.getSpeed() + "km/h");
-		
-		car1.printStatus(); 
-
+		car1.printStatus();
+		car2.printStatus();
+		car3.printStatus();
 
 	}
 

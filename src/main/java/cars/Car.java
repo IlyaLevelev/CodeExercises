@@ -2,16 +2,20 @@ package cars;
 
 public class Car {
 
+	// fields
 	String brand;
 	private int speed;
 	int maxSpeed;
 	
+	// constructor
 	public Car(String brand, int maxSpeed) {
 		
 		this.brand = brand;
 		this.speed = 0;
 		this.maxSpeed = maxSpeed;
 	}
+	
+	// methods
 	
 	public void accelerate(int increment) {
 		
