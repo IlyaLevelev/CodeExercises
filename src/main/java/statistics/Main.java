@@ -8,6 +8,7 @@ public class Main {
 		// it should have 2 fields: sum and count
 		Statistics stats = new Statistics();
 		
+		
 		stats.add(5);
 		stats.add(7);
 		stats.add(6);
