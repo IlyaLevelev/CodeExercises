@@ -23,13 +23,14 @@ public class Statistics {
 	}
 
 	public double getSum () {
+		double result = 0;
 		int i = 0;
 		while (i<this.numbers.size()) {
-			this.sum = this.sum + numbers.get(i);
+			result = result + numbers.get(i);
 			i = i + 1;
 			
 		}
-		return this.sum;
+		return result;
 	}
 	public double getAverage () {
 		double result;
