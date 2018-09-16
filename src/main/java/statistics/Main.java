@@ -16,7 +16,7 @@ public class Main {
 		
 		double sum = stats.getSum(); // should be 24
 		double avg = stats.getAverage(); // should be 6
-		
+		System.out.println(avg);
 	}
 
 }

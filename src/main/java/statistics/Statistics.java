@@ -18,7 +18,7 @@ public class Statistics {
 
 	public void add(double d) {
 		
-		this.numbers = Arrays.asList (d);
+		this.numbers.add(d);
 		
 	}
 
@@ -30,5 +30,11 @@ public class Statistics {
 			
 		}
 		return this.sum;
+	}
+	public double getAverage () {
+		double result;
+		this.count = this.numbers.size();
+		result = getSum() /  this.count;
+		return result;
 	}
 }
