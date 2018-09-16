@@ -1,5 +1,6 @@
 package statistics;
 
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class Main {
 		stats.add(6.0);
 		
 		double sum = stats.getSum(); // should be 24
-		System.out.println(sum);
+		double avg = stats.getAverage(); // should be 6
 		
 	}
 
