@@ -23,11 +23,12 @@ public class WriteCsvProducts {
 		
 		writer.println("Name;Price");
 		
-		int i = 0;
-		while (i < products.size()) {
-			Product product = products.get(i);
+		
+		
+		for (Product product : products) { // try to use the for(:)
+			
 			writer.println(product.name + ";" + product.price);
-			i++;
+			
 		}
 		
 
