@@ -1,9 +1,6 @@
 package rooms;
 
 import java.util.Arrays;
-import java.util.List;
-
-import statistics.Statistics;
 
 public class Main {
 
@@ -27,7 +24,17 @@ public class Main {
 		
 		red.nextRooms = Arrays.asList(green, blue, purple);
 
-
+		Room livingroom = new Room ("living Room");
+		Room kitchen = new Room ("kitchen");
+		Room dorm1 = new Room ("dorm1");
+		Room dorm2 = new Room ("dorm2");
+		Room bathroom = new Room ("bathroom");
+		
+		livingroom.nextRooms = Arrays.asList(dorm1, dorm2, kitchen, bathroom);
+		kitchen.next = livingroom;
+		dorm1.nextRooms = Arrays.asList(livingroom, bathroom, dorm2);
+		dorm2.nextRooms = Arrays.asList(livingroom, dorm1);
+		bathroom.nextRooms = Arrays.asList(dorm1, livingroom);
 	}
 
 }
